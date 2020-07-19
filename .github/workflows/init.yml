@@ -17,3 +17,6 @@ jobs:
     
     - name: Run go mod init
       run: go mod init github.com/${{github.repository}}
+    
+    - name: Git Commit/Push Changes
+      uses: actions-x/commit@v1
